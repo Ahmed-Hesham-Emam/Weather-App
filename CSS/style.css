@@ -73,13 +73,14 @@ nav .nav-item a:hover {
 
 input[type="text"],
 input[type="text"]:focus {
-  all: unset;
-  width: 90%;
+  width: 100%;
+  padding: 10px 20px;
   background-color: #1e202b;
   color: white;
   padding: 12px 20px;
   border-color: black !important;
   border: none;
+  outline: none;
 }
 
 /* Forecast Style */
@@ -264,10 +265,14 @@ footer {
   background-color: #262936;
 }
 
+
 form button {
+  border: none;
   color: white !important;
-  padding: 6px 18px !important;
-  left: 87.5%;
+  padding: 6px 20px !important;
+  right: 5px !important;
+  top: 5px !important;
+  bottom: 5px !important;
 }
 
 footer .social-links {
