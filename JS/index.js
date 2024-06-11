@@ -29,6 +29,64 @@ function displayCurrent(currentTemp) {
       day: "numeric",
     });
 
+// Re-assign directions
+let windDirection = currentTemp.current.wind_dir;
+  let fullWindDirection = "";
+
+  switch (windDirection) {
+    case "N":
+      fullWindDirection = "North";
+      break;
+    case "NNE":
+      fullWindDirection = "North Northeast";
+      break;
+    case "NE":
+      fullWindDirection = "Northeast";
+      break;
+    case "ENE":
+      fullWindDirection = "East Northeast";
+      break;
+    case "E":
+      fullWindDirection = "East";
+      break;
+    case "ESE":
+      fullWindDirection = "East Southeast";
+      break;
+    case "SE":
+      fullWindDirection = "Southeast";
+      break;
+    case "SSE":
+      fullWindDirection = "South Southeast";
+      break;
+    case "S":
+      fullWindDirection = "South";
+      break;
+    case "SSW":
+      fullWindDirection = "South Southwest";
+      break;
+    case "SW":
+      fullWindDirection = "Southwest";
+      break;
+    case "WSW":
+      fullWindDirection = "West Southwest";
+      break;
+    case "W":
+      fullWindDirection = "West";
+      break;
+    case "WNW":
+      fullWindDirection = "West Northwest";
+      break;
+    case "NW":
+      fullWindDirection = "Northwest";
+      break;
+    case "NNW":
+      fullWindDirection = "North Northwest";
+      break;
+    default:
+      fullWindDirection = windDirection;
+      break;
+  }
+
     // Display current weather
     let currentCartona = `<div class="forcast-container col-md-4 col-12 mb-3">
                 <div class="forcast-header">
@@ -57,13 +115,15 @@ function displayCurrent(currentTemp) {
                       currentTemp.current.wind_kph
                     }</p>
                     <p><i class="fa-solid fa-location-arrow"></i> ${
-                      currentTemp.current.wind_dir
+                      fullWindDirection
                     }</p>
                   </div>
                 </div>
               </div>`;
     forecastTable.innerHTML = currentCartona;
   }
+
+
 }
 
 function displayFuture() {
