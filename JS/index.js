@@ -113,7 +113,7 @@ function displayCurrent(currentTemp) {
                     } %</p>
                     <p><i class="fa-solid fa-wind"></i> ${
                       currentTemp.current.wind_kph
-                    }</p>
+                    } km/h</p>
                     <p><i class="fa-solid fa-location-arrow"></i> ${fullWindDirection}</p>
                   </div>
                 </div>

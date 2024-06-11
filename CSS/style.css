@@ -95,6 +95,7 @@ input[type="text"]:focus {
   padding: 5px 16px 0 16px;
   background-color: #2d303d;
 }
+
 .forcast-header p {
   display: flex;
   flex-flow: row nowrap;
@@ -146,6 +147,7 @@ input[type="text"]:focus {
   -ms-border-radius: 20px 0 0 20px;
   -o-border-radius: 20px 0 0 20px;
 }
+
 #forecast :nth-child(3).forcast-container {
   border-radius: 0 20px 20px 0;
   -webkit-border-radius: 0 20px 20px 0;
@@ -173,7 +175,6 @@ input[type="text"]:focus {
 }
 
 /* Loader */
-
 .sk-chase {
   width: 140px;
   height: 140px;
@@ -264,7 +265,6 @@ input[type="text"]:focus {
 footer {
   background-color: #262936;
 }
-
 
 form button {
   border: none;
